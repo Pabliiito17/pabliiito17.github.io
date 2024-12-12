@@ -23,23 +23,34 @@
 
 <body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="assets/Logos/Logo.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">
-                    <span class="fw-bold text-gradient" style="font-size: 1.8rem;">Pablo Alonso Guzmán</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                    </ul>
+        <!-- Zona navegación-->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="assets/Logo.png" alt="Logo" style="width: 70px; height: 30px; margin-right: 10px;">
+                        <span class="fw-bold text-gradient" style="font-size: 1.8rem;">Pablo Alonso Guzmán</span>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                        </ul>
+                        
+                        <div class="d-flex align-items-center">
+                            <img src="assets/SpainFlag.png" alt="España" class="flag-icon">
+                            <label class="switch">
+                                <input type="checkbox" id="languageToggle">
+                                <span class="slider"></span>
+                            </label>
+                            <img src="assets/UKFlag.png" alt="UK" class="flag-icon">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </section>
 
 
         <!-- Projects Section-->
@@ -64,10 +75,11 @@
                                         <div class="d-flex justify-content-between align-items-center mb-4">
                                             <h2 class="fw-bolder">DownhillRush</h2>
                                             <!-- Botón de descarga a la derecha del título -->
-                                            <a class="btn ms-auto" href="assets/GDD.pdf" download="GDD_DownHillRush" style="background-color: #f44336; color: white;">
+                                            <a class="btn ms-auto" href="assets/GDD.pdf" download="GDD_DownHillRush"
+                                                style="background-color: #f44336; color: white;">
                                                 <i class="bi bi-download me-2"></i>
                                                 Descargar GDD
-                                            </a>                                            
+                                            </a>
                                         </div>
                                         <p>MBXGames está actualmente trabajando en este proyecto.</p>
                                         <p>DownHillRush es un videojuego entretenido, dinámico y con mecánicas
