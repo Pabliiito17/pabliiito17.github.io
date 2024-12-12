@@ -12078,3 +12078,92 @@ footer .small:hover {
   justify-content: flex-end;
   margin-top: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales para la barra de navegación */
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Estilo para las banderas */
+.flag-icon {
+  width: 24px; /* Tamaño adecuado de las banderas */
+  height: 16px;
+  margin: 0 12px; /* Espaciado entre el switcher y las banderas */
+}
+
+/* Estilo para el switcher */
+.switch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* La bola (el círculo) */
+.switch input {
+  display: none;
+}
+
+.switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: red;  /* Rojo cuando está a la izquierda (ES) */
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+/* Efecto cuando el checkbox está marcado (se mueve a la derecha) */
+.switch input:checked + .slider {
+  left: 50%;
+  background-color: blue;  /* Azul cuando está a la derecha (EN) */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 767px) {
+  /* En pantallas móviles, el nombre y logo estarán arriba, y el menú debajo */
+  
+  .navbar-brand {
+      display: flex;
+      flex-direction: column;  /* Coloca el logo y el nombre uno encima del otro */
+      align-items: center;      /* Centra el logo y el nombre */
+      margin-bottom: 1rem;      /* Espacio entre el logo y el menú */
+  }
+
+  .navbar-toggler {
+      display: block; /* Asegura que el botón de menú sea visible */
+  }
+
+  .collapse.navbar-collapse {
+      display: block; /* Hace que el menú desplegable sea visible */
+      text-align: center; /* Centra el contenido del menú */
+      margin-top: 1rem;   /* Añade un poco de espacio entre el logo y el menú */
+  }
+
+  .nav-item {
+      margin: 0.5rem 0; /* Espacio entre los ítems del menú */
+  }
+
+  .d-flex.align-items-center {
+      flex-direction: row;  /* Coloca las banderas y el switcher en una fila */
+      justify-content: center; /* Centra las banderas y el switcher */
+      margin-top: 1rem;  /* Espacio por encima del switcher */
+  }
+}

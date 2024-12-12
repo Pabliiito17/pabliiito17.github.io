@@ -23,38 +23,59 @@
 
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="assets/Logo.png" alt="Logo" style="width: 70px; height: 30px; margin-right: 10px;">
-                    <span class="fw-bold text-gradient" style="font-size: 1.8rem;">Pablo Alonso Guzmán</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- Zona navegación -->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="assets/Logo.png" alt="Logo" style="width: 70px; height: 30px; margin-right: 10px;">
+                        <span class="fw-bold text-gradient" style="font-size: 1.8rem;">Pablo Alonso Guzmán</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html" data-key="nav-home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html"
+                                    data-key="nav-projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html"
+                                    data-key="nav-contact">Contact</a></li>
+                        </ul>
 
-        <!-- Encabezado Principal -->
+                        <!-- Language Switcher -->
+                        <div class="d-flex align-items-center">
+                            <!-- Bandera España (ES) -->
+                            <img src="assets/SpainFlag.png" alt="España" class="flag-icon">
+
+                            <!-- Switcher -->
+                            <label class="switch">
+                                <input type="checkbox" id="languageToggle">
+                                <span class="slider"></span>
+                            </label>
+
+                            <!-- Bandera Reino Unido (EN) -->
+                            <img src="assets/UKFlag.png" alt="UK" class="flag-icon">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+        <!-- Zona encabezado -->
         <section class="encabezado text-center text-white py-5">
             <div class="container px-5">
-                <h1 class="display-4 fw-bolder">Bienvenido a mi perfil</h1>
-                <p class="lead">Diseñador junior enfocado en modelado 3D y animación</p>
+                <h1 class="display-4 fw-bolder" data-key="head-title"></h1>
+                <p class="lead" data-key="head-subtitle"></p>
                 <a class="btn btn-light btn-lg px-4 py-3 mt-3" href="projects.html"
-                    style="background-color: #f44336; color: white;">Explora mis proyectos</a>
+                    style="background-color: #f44336; color: white;" data-key="head-button"></a>
             </div>
         </section>
 
-        <!-- Iconos con color degradado rojo a negro -->
+        <!-- Zona habilidades -->
         <section class="py-5 text-center">
             <div class="container px-5">
                 <div class="row gx-5">
@@ -62,26 +83,24 @@
                     <div class="col-lg-4">
                         <div class="icon-box">
                             <i class="bi bi-lightbulb icon-gradient"></i>
-                            <h3 class="mt-3" style="color: black;">Creatividad</h3>
-                            <p>Generación constante de ideas innovadoras para llevar proyectos a otro nivel.</p>
+                            <h3 class="mt-3" style="color: black;" data-key="creativity-title"></h3>
+                            <p data-key="creativity-subtitle"></p>
                         </div>
                     </div>
                     <!-- Trabajo en equipo -->
                     <div class="col-lg-4">
                         <div class="icon-box">
                             <i class="bi bi-people-fill icon-gradient"></i>
-                            <h3 class="mt-3" style="color: black;">Trabajo en equipo</h3>
-                            <p>Excelentes habilidades para colaborar y alcanzar objetivos comunes con equipos diversos.
-                            </p>
+                            <h3 class="mt-3" style="color: black;" data-key="teamwork-title"></h3>
+                            <p data-key="teamwork-subtitle"></p>
                         </div>
                     </div>
                     <!-- Proyectos -->
                     <div class="col-lg-4">
                         <div class="icon-box">
                             <i class="bi bi-controller icon-gradient"></i>
-                            <h3 class="mt-3" style="color: black;">Proyectos</h3>
-                            <p>Más de 3 juegos desarrollados, con énfasis en la experiencia del usuario y funcionalidad.
-                            </p>
+                            <h3 class="mt-3" style="color: black;" data-key="proyects-title"></h3>
+                            <p data-key="proyects-subtitle"></p>
                         </div>
                     </div>
                 </div>
@@ -90,35 +109,31 @@
                     <div class="col-lg-4">
                         <div class="icon-box">
                             <i class="bi bi-tools icon-gradient"></i>
-                            <h3 class="mt-3" style="color: black;">Resolución de problemas</h3>
-                            <p>Capacidad para identificar desafíos y desarrollar soluciones eficientes e innovadoras.
-                            </p>
+                            <h3 class="mt-3" style="color: black;" data-key="problems-title"></h3>
+                            <p data-key="problems-subtitle"></p>
                         </div>
                     </div>
                     <!-- Adaptabilidad -->
                     <div class="col-lg-4">
                         <div class="icon-box">
                             <i class="bi bi-arrow-repeat icon-gradient"></i>
-                            <h3 class="mt-3" style="color: black;">Adaptabilidad</h3>
-                            <p>Habilidad para ajustarme rápidamente a nuevas herramientas, tecnologías y metodologías.
-                            </p>
+                            <h3 class="mt-3" style="color: black;" data-key="adaptability-title"></h3>
+                            <p data-key="adaptability-subtitle"></p>
                         </div>
                     </div>
                     <!-- Idiomas -->
                     <div class="col-lg-4">
                         <div class="icon-box">
                             <i class="bi bi-translate icon-gradient"></i>
-                            <h3 class="mt-3" style="color: black;">Idiomas</h3>
-                            <p>Certificado en inglés nivel B2, con habilidades avanzadas de comunicación escrita y oral.
-                            </p>
+                            <h3 class="mt-3" style="color: black;" data-key="idioms-title"></h3>
+                            <p data-key="idioms-subtitle"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- About Section-->
+        <!-- Zona sobre mí-->
         <div class="separator-line"></div>
         <section>
             <div class="container px-5">
@@ -126,22 +141,9 @@
                     <div class="col-xxl-8">
                         <div class="text-center my-5">
                             <!-- Título con color negro -->
-                            <h1 class="display-5 fw-bolder" style="color: black;">Sobre mí</h1>
-                            <p>
-                                Soy un estudiante recién graduado en Diseño y Desarrollo de Videojuegos
-                                con una gran pasión por el modelado 3D, el texturizado y la animación. Estoy enfocado en
-                                construir una
-                                carrera profesional en este ámbito, combinando creatividad con habilidades técnicas.
-                            </p>
-                            <p>
-                                Tengo experiencia trabajando con herramientas como <strong>Blender, 3Ds Max, Substance
-                                    Painter</strong>
-                                y <strong>Unity</strong>, lo que me permite desarrollar proyectos visualmente
-                                impactantes y técnicamente sólidos.
-                                Estoy emocionado por aplicar mis conocimientos y seguir aprendiendo para contribuir a
-                                proyectos innovadores
-                                en la industria del diseño y los videojuegos.
-                            </p>
+                            <h1 class="display-5 fw-bolder" style="color: black;" data-key="aboutme-title"></h1>
+                            <p data-key="aboutme-subtitle1"></p>
+                            <p data-key="aboutme-subtitle2"></p>
                         </div>
                     </div>
                 </div>
@@ -151,148 +153,160 @@
 
 
         <div class="separator-line"></div>
-        <!-- Profile Header -->
+        <!-- Zona Curriculum -->
         <section>
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xxl-8">
                         <div class="text-center my-5">
-                            <!-- Título con color negro -->
                             <h1 class="display-5 fw-bolder" style="color: black;">Curriculum Vitae</h1>
                             <a class="btn btn-light btn-lg px-4 py-3 mt-3" href="assets/CV/PabloAlonsoGuzman_CV.pdf"
-                            download="PabloAlonsoGuzman_CV" style="background-color: #f44336; color: white;">
-                            <div class="d-inline-block bi bi-download me-2"></div> Descargar CV
-                        </a>
+                                download="PabloAlonsoGuzman_CV" style="background-color: #f44336; color: white;">
+                                <div class="d-inline-block">
+                                    <i class="bi bi-download me-2"></i>
+                                    <span class="ms-2" data-key="downloadCV"></span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-8">
+                        <!-- Subzona experiencia académica -->
+                        <section>
+                            <h2 class="fw-bolder mb-4 mt-5">
+                                <i class="bi bi-person me-2 icon-gradient"></i>
+                                <span style="color: black;" data-key="experience"></span>
+                            </h2>
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 style="color: black; font-weight: bold;">
+                                                <i class="bi bi-calendar-event icon-gradient"></i>
+                                                <span style="color: black;" data-key="experience-card1-title"></span>
+                                            </h3>
+                                            <p class="mb-0 fw-bold" data-key="experience-card1-subtitle1"></p>
+                                            <p class="text-muted mb-0" data-key="experience-card1-subtitle2"></p>
+                                        </div>
+                                        <span class="badge align-self-start"
+                                            style="background-color: red; color: white;"
+                                            data-key="experience-card1-percentage">
+                                        </span>
+                                    </div>
+                                    <p class="mt-3" data-key="experience-card1-sub-subtitle"></p>
+                                </div>
+                            </div>
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 style="color: black; font-weight: bold;">
+                                                <i class="bi bi-calendar-event icon-gradient"></i>
+                                                <span style="color: black;" data-key="experience-card2-title"></span>
+                                            </h3>
+                                            <p class="mb-0 fw-bold" data-key="experience-card2-subtitle1"></p>
+                                            <p class="text-muted" data-key="experience-card2-subtitle2"></p>
+                                        </div>
+                                        <span class="badge align-self-start"
+                                            style="background-color: red; color: white;"
+                                            data-key="experience-card2-percentage">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 style="color: black; font-weight: bold;">
+                                                <i class="bi bi-calendar-event icon-gradient"></i>
+                                                <span style="color: black;" data-key="experience-card3-title"></span>
+                                            </h3>
+                                            <p class="mb-0 fw-bold" data-key="experience-card3-subtitle1"></p>
+                                            <p class="text-muted" data-key="experience-card3-subtitle2"></p>
+                                        </div>
+                                        <span class="badge align-self-start"
+                                            style="background-color: red; color: white;"
+                                            data-key="experience-card3-percentage">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <!-- Subzona habilidades y conocimiento -->
+                        <section>
+                            <div>
+                                <h2 class="fw-bolder mb-4 mt-5">
+                                    <i class="bi bi-tools me-2 icon-gradient"></i>
+                                    <span style="color: black;" data-key="skills"></span>
+                                </h2>
+                                <div>
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Blender</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                3DsMax</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Substance Painter</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Unity</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="fw-bolder mb-4 mt-5">
+                                    <i class="bi bi-book me-2 icon-gradient"></i>
+                                    <span style="color: black;" data-key="knowledge"></span>
+                                </h2>
+                                <div>
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                C# y C++</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                JavaScript</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                HTML y CSS</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Photoshop</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </section>
-
-
-
-
-    
-
-        <!-- Page Content -->
-        <div class="container px-5 my-5">
-            <div class="row gx-5">
-                <!-- Experience Section -->
-                <div class="col-lg-8">
-                    <section>
-                        <h2 class="fw-bolder mb-4">
-                            <i class="bi bi-person me-2 icon-gradient"></i>
-                            Experiencia Académica
-                        </h2>
-                        <!-- Experience Cards -->
-                        <div class="card shadow-sm mb-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 style="color: black; font-weight: bold;">
-                                            <i class="bi bi-calendar-event icon-gradient"></i> 2020 - Presente
-                                        </h3>
-                                        <p class="mb-0 fw-bold">Estudiante Grado Universitario</p>
-                                        <p class="text-muted mb-0">Universidad Rey Juan Carlos, Madrid</p>
-                                    </div>
-                                    <span class="badge align-self-start"
-                                        style="background-color: red; color: white;">75% completado
-                                    </span>
-                                </div>
-                                <p class="mt-3">Estudio en Diseño y Desarrollo de Videojuegos, enfocado en diseño 3D</p>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm mb-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 style="color: black; font-weight: bold;">
-                                            <i class="bi bi-calendar-event icon-gradient"></i> 2018 - 2020
-                                        </h3>
-                                        <p class="mb-0 fw-bold">Bachillerato en Ciencias y Tecnología</p>
-                                        <p class="text-muted">IES El Escorial, Madrid</p>
-                                    </div>
-                                    <span class="badge align-self-start"
-                                        style="background-color: red; color: white;">Completado
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm mb-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 style="color: black; font-weight: bold;">
-                                            <i class="bi bi-calendar-event icon-gradient"></i> 2014 - 2018
-                                        </h3>
-                                        <p class="mb-0 fw-bold">Educación Secundaria Obligatoria (ESO)</p>
-                                        <p class="text-muted">IES El Escorial, Madrid</p>
-                                    </div>
-                                    <span class="badge align-self-start"
-                                        style="background-color: red; color: white;">Completado
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Skills Section -->
-                <div class="col-lg-4">
-                    <section>
-                        <!-- Sección Habilidades con icono de herramienta -->
-                        <h2 class="fw-bolder mb-4">
-                            <i class="bi bi-tools me-2 icon-gradient"></i>
-                            Habilidades
-                        </h2>
-                        <div class="skills-section">
-                            <div class="row g-3">
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">Blender</div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">3DsMax</div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">Substance Painter</div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">Unity</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Línea de separación -->
-                        <div class="separator"></div>
-
-                        <!-- Sección Conocimiento con icono de libro -->
-                        <h2 class="fw-bolder mb-4 mt-5">
-                            <i class="bi bi-book me-2 icon-gradient"></i>
-                            Conocimiento
-                        </h2>
-                        <div class="skills-section">
-                            <div class="row g-3">
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">C# y C++</div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">JavaScript</div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">HTML y CSS</div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="skill">Photoshop</div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-
-
     </main>
 
 
@@ -301,7 +315,7 @@
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; MBXGames 2023</div>
+                    <div class="small m-0">Copyright &copy; PaloAG</div>
                 </div>
                 <div class="col-auto">
                     <a class="small" href="#!">Privacidad</a>
@@ -319,6 +333,141 @@
 
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+
+
+
+    <!-- Language Toggle Script -->
+    <script>
+        const languageToggle = document.getElementById('languageToggle');
+        const translations = {
+            en: {
+                // Zona navegación //
+                "nav-home": "Home",
+                "nav-projects": "Projects",
+                "nav-contact": "Contact",
+
+                // Zona encabezado //
+                "head-title": "Welcome to my profile",
+                "head-subtitle": "Junior designer focused on 3D modeling and animation",
+                "head-button": "Explore my projects",
+
+                // Zona habilidades //
+                "creativity-title": "Creativity",
+                "creativity-subtitle": "Prueba",
+                "teamwork-title": "Teamwork",
+                "teamwork-subtitle": "Excellent skills in collaborating and achieving common goals with diverse teams.",
+                "proyects-title": "Projects",
+                "proyects-subtitle": "More than 3 games developed, focusing on user experience and functionality.",
+                "problems-title": "Problem Solving",
+                "problems-subtitle": "Ability to identify challenges and develop efficient and innovative solutions.",
+                "adaptability-title": "Adaptability",
+                "adaptability-subtitle": "Skill in quickly adjusting to new tools, technologies, and methodologies.",
+                "idioms-title": "Languages",
+                "idioms-subtitle": "Certified in English at B2 level, with advanced written and oral communication skills.",
+
+                // Zona sobre mí //
+                "aboutme-title": "About Me",
+                "aboutme-subtitle1": "I am a recently graduated student in Game Design and Development," +
+                    "with a great passion for 3D modeling, texturing, and animation." +
+                    "I am focused on building a professional career in this field," +
+                    "combining creativity with technical skills.",
+                "aboutme-subtitle2": "I have experience working with tools such as <strong>Blender, 3Ds Max, SubstancePainter</strong>," +
+                    "and <strong>Unity</strong>, which allows me to develop visually impactful and technically solid projects." +
+                    "I am excited to apply my knowledge and continue learning" +
+                    "to contribute to innovative projects in the design and gaming industry.",
+
+                // Zona curriculum //
+                "downloadCV": "Download CV",
+                "experience": "Academic Experience",
+                "experience-card1-title": "2020 - Present",
+                "experience-card1-subtitle1": "Estudiante de grado",
+                "experience-card1-subtitle2": "Universidad Rey Juan Carlos, Madrid",
+                "experience-card1-percentage": "87.5% completed",
+                "experience-card1-sub-subtitle": "Grado en Diseño y Desarrollo de Videojuegos, enfocado en diseño 3D",
+                "experience-card2-title": "2018 - 2020",
+                "experience-card2-subtitle1": "Bachillerato en Ciencias y Tecnología",
+                "experience-card2-subtitle2": "IES El Escorial, Madrid",
+                "experience-card2-percentage": "Completed",
+                "experience-card3-title": "2014 - 2018",
+                "experience-card3-subtitle1": "Educación Secundaria Obligatoria (ESO)",
+                "experience-card3-subtitle2": "IES El Escorial, Madrid",
+                "experience-card3-percentage": "Completed",
+                "skills": "Skills",
+                "knowledge": "Knowledge",
+            },
+
+            es: {
+                // Zona navegación //
+                "nav-home": "Inicio",
+                "nav-projects": "Proyectos",
+                "nav-contact": "Contacto",
+
+                // Zona encabezado //
+                "head-title": "Bienvenido a mi perfil",
+                "head-subtitle": "Diseñador junior enfocado en modelado 3D y animación",
+                "head-button": "Explora mis proyectos",
+
+                // Zona habilidades //
+                "creativity-title": "Creatividad",
+                "creativity-subtitle": "Generación constante de ideas innovadoras para llevar proyectos a otro nivel.",
+                "teamwork-title": "Trabajo en equipo",
+                "teamwork-subtitle": "Excelentes habilidades para colaborar y alcanzar objetivos comunes con equipos diversos.",
+                "proyects-title": "Proyectos",
+                "proyects-subtitle": "Más de 3 juegos desarrollados, con énfasis en la experiencia del usuario y funcionalidad.",
+                "problems-title": "Resolución de problemas",
+                "problems-subtitle": "Capacidad para identificar desafíos y desarrollar soluciones eficientes e innovadoras.",
+                "adaptability-title": "Adaptabilidad",
+                "adaptability-subtitle": "Habilidad para ajustarme rápidamente a nuevas herramientas, tecnologías y metodologías.",
+                "idioms-title": "Idiomas",
+                "idioms-subtitle": "Certificado en inglés nivel B2, con habilidades avanzadas de comunicación escrita y oral.",
+
+                // Zona sobre mí //
+                "aboutme-title": "Sobre mí",
+                "aboutme-subtitle1": "Soy un estudiante recién graduado en Diseño y Desarrollo de Videojuegos con una gran pasión por el modelado 3D, " +
+                    "el texturizado y la animación. Estoy enfocado en construir una carrera profesional en este ámbito, combinando creatividad con habilidades técnicas.",
+                "aboutme-subtitle2": "Tengo experiencia trabajando con herramientas como <strong>Blender, 3Ds Max, SubstancePainter</strong> y <strong>Unity</strong>," +
+                    "lo que me permite desarrollar proyectos visualmente impactantes y técnicamente sólidos. Estoy emocionado por aplicar mis conocimientos" +
+                    "y seguir aprendiendo para contribuir a proyectos innovadores en la industria del diseño y los videojuegos.",
+
+                // Zona curriculum //
+                "downloadCV": "Descargar CV",
+                "experience": "Experiencia académica",
+                "experience-card1-title": "2020 - Presente",
+                "experience-card1-subtitle1": "Estudiante Grado Universitario",
+                "experience-card1-subtitle2": "Universidad Rey Juan Carlos, Madrid",
+                "experience-card1-percentage": "87,5% completado",
+                "experience-card1-sub-subtitle": "Grado en Diseño y Desarrollo de Videojuegos, enfocado en diseño 3D",
+                "experience-card2-title": "2018 - 2020",
+                "experience-card2-subtitle1": "Bachillerato en Ciencias y Tecnología",
+                "experience-card2-subtitle2": "IES El Escorial, Madrid",
+                "experience-card2-percentage": "Completado",
+                "experience-card3-title": "2014 - 2018",
+                "experience-card3-subtitle1": "Educación Secundaria Obligatoria (ESO)",
+                "experience-card3-subtitle2": "IES El Escorial, Madrid",
+                "experience-card3-percentage": "Completado",
+                "skills": "Habilidades",
+                "knowledge": "Conocimiento",
+            }
+        };
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                el.innerHTML = translations[lang][key];
+            });
+        }
+
+        languageToggle.addEventListener('change', () => {
+            const lang = languageToggle.checked ? 'en' : 'es';
+            updateLanguage(lang);
+        });
+
+        // Set default language
+        updateLanguage('es');
+    </script>
+
+
+
 </body>
 
 </html>
