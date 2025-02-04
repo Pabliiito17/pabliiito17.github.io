@@ -12167,3 +12167,62 @@ footer .small:hover {
       margin-top: 1rem;  /* Espacio por encima del switcher */
   }
 }
+
+
+
+
+/* Zona de las tarjetas de los proyectos */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.015);
+}
+
+
+
+
+
+/* Zona de carrusel de imágenes */ 
+.carousel-item img {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-item img {
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+}
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/* Zona de los links */
+.project-links li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+.project-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+.project-links a:hover {
+  color: #007bff;
+}

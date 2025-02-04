@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content />
     <meta name="author" content />
-    <title>MBXGames - Contacto</title>
+    <title>PabloAG - Contacto</title>
     <!-- Favicon-->
     <link rel="icon" type="image/png" href="assets/Logo.png" />
     <!-- Custom Google font-->
@@ -21,7 +21,7 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column h-100 bg-light">
     <main class="flex-shrink-0">
         <!-- Zona navegación-->
         <section>
@@ -35,10 +35,12 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html" data-key="nav-home"></a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html" data-key="nav-projects"></a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html" data-key="nav-contact"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html" data-key="nav-projects"></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html" data-key="nav-contact"></a>
+                            </li>
                         </ul>
-                        
+
                         <div class="d-flex align-items-center">
                             <img src="assets/SpainFlag.png" alt="España" class="flag-icon">
                             <label class="switch">
@@ -52,119 +54,54 @@
             </nav>
         </section>
 
-
-        <!-- Hero Section -->
+        <!-- Zona encabezado -->
         <section class="encabezado text-center text-white py-5">
             <div class="container px-5">
                 <i class="bi bi-telephone-fill icon-gradient" style="font-size: 50px; margin-bottom: 15px;"></i>
-                <h1 class="display-4 fw-bolder">Contacto</h1>
-                <p class="lead">Estamos aquí para ayudarte. ¡No dudes en escribirnos!</p>
+                <h1 class="display-4 fw-bolder" data-key="head-title"></h1>
+                <p class="lead" data-key="head-subtitle"></p>
             </div>
         </section>
 
-
-
-        <section class="py-5">
-            <div class="container px-5 mb-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- Project Card 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="d-flex align-items-center">
-                                    <div class="p-5 w-100">
-                                        <!-- Page content-->
-                                        <div class="container px-5">
-                                            <!-- Contact form-->
-                                            <div class="row gx-5 justify-content-center">
-                                                <div class="col-lg-8 col-xl-6">
-                                                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                                        <!-- Name input-->
-                                                        <div class="form-floating mb-3">
-                                                            <input class="form-control" id="name" type="text"
-                                                                placeholder="Enter your name..."
-                                                                data-sb-validations="required" />
-                                                            <label for="name"><i class="bi bi-person-fill"></i>
-                                                                Nombre completo</label>
-                                                            <div class="invalid-feedback"
-                                                                data-sb-feedback="name:required">Es necesario un
-                                                                nombre</div>
-                                                        </div>
-
-                                                        <!-- Email input-->
-                                                        <div class="form-floating mb-3">
-                                                            <input class="form-control" id="email" type="email"
-                                                                placeholder="name@example.com"
-                                                                data-sb-validations="required,email" />
-                                                            <label for="email"><i class="bi bi-envelope-fill"></i>
-                                                                Correo
-                                                                electrónico</label>
-                                                            <div class="invalid-feedback"
-                                                                data-sb-feedback="email:required">Es necesario
-                                                                un
-                                                                correo electrónico</div>
-                                                        </div>
-
-                                                        <!-- Phone input-->
-                                                        <div class="form-floating mb-3">
-                                                            <input class="form-control" id="phone" type="tel"
-                                                                placeholder="(123) 456-7890"
-                                                                data-sb-validations="required" />
-                                                            <label for="phone"><i class="bi bi-telephone-fill"></i>
-                                                                Número de
-                                                                teléfono</label>
-                                                            <div class="invalid-feedback"
-                                                                data-sb-feedback="phone:required">Es necesario
-                                                                un
-                                                                número de teléfono</div>
-                                                        </div>
-
-                                                        <!-- Message input-->
-                                                        <div class="form-floating mb-3">
-                                                            <textarea class="form-control" id="message"
-                                                                placeholder="Escribe tu mensaje aquí..."
-                                                                style="height: 10rem"
-                                                                data-sb-validations="required"></textarea>
-                                                            <label for="message"><i class="bi bi-chat"></i>
-                                                                Mensaje</label>
-                                                            <div class="invalid-feedback"
-                                                                data-sb-feedback="message:required">Es necesario
-                                                                un
-                                                                mensaje</div>
-                                                        </div>
-
-                                                        <!-- Submit success message-->
-                                                        <div class="d-none" id="submitSuccessMessage">
-                                                            <div class="text-center mb-3">
-                                                                <div class="fw-bolder">Formulario enviado
-                                                                    correctamente</div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Submit error message-->
-                                                        <div class="d-none" id="submitErrorMessage">
-                                                            <div class="text-center text-danger mb-3">Error
-                                                                enviando el mensaje</div>
-                                                        </div>
-
-                                                        <!-- Submit Button-->
-                                                        <div class="d-flex justify-content-end">
-                                                            <a class="btn btn-light btn-lg px-4 py-3 mt-3"
-                                                                id="submitButton" type="submit"
-                                                                style="background-color: #f44336; color: white;">Enviar</a>
-                                                        </div>
-
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- Zona contacto -->
+        <section class="py-5 text-center">
+            <div class="container px-5">
+                <div class="row gx-5">
+                    <!-- Email -->
+                    <div class="col-lg-3">
+                        <div class="icon-box">
+                            <i class="bi bi-envelope-fill icon-gradient"></i>
+                            <h3 class="mt-3" style="color: black;" data-key="contact-email-title"></h3>
+                            <p data-key="contact-email"></p>
+                        </div>
+                    </div>
+                    <!-- LinkedIn -->
+                    <div class="col-lg-3">
+                        <div class="icon-box">
+                            <i class="bi bi-linkedin icon-gradient"></i>
+                            <h3 class="mt-3" style="color: black;" data-key="contact-linkedin-title"></h3>
+                            <p><a href="https://www.linkedin.com/in/pablo-alonso-guzman/" data-key="contact-linkedin"></a></p>
+                        </div>
+                    </div>
+                    <!-- ArtStation -->
+                    <div class="col-lg-3">
+                        <div class="icon-box">
+                            <i class="bi bi-brush-fill icon-gradient"></i>
+                            <h3 class="mt-3" style="color: black;" data-key="contact-artstation-title"></h3>
+                            <p><a href="https://www.artstation.com/pabloag/profile" data-key="contact-artstation"></a></p>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="col-lg-3">
+                        <div class="icon-box">
+                            <i class="bi bi-github icon-gradient"></i>
+                            <h3 class="mt-3" style="color: black;" data-key="contact-github-title"></h3>
+                            <p><a href="https://github.com/Pabliiito17" data-key="contact-github"></a></p>
                         </div>
                     </div>
                 </div>
-
-
+            </div>
+        </section>
     </main>
 
     <!-- Footer-->
@@ -172,7 +109,7 @@
         <div class="container px-5">
             <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                 <div class="col-auto">
-                    <div class="small m-0">Copyright &copy; MBXGames 2023</div>
+                    <div class="small m-0">Copyright &copy; Pablo Alonso Guzmán</div>
                 </div>
                 <div class="col-auto">
                     <a class="small" href="#!">Privacidad</a>
@@ -191,6 +128,72 @@
     <script src="js/scripts.js"></script>
     <!-- SB Forms JS-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <!-- Script cambio de idioma -->
+    <script>
+        const languageToggle = document.getElementById('languageToggle');
+        const translations = {
+            en: {
+                // Navigation Zone //
+                "nav-home": "Home",
+                "nav-projects": "Projects",
+                "nav-contact": "Contact",
+
+                // Header Zone //
+                "head-title": "Contact",
+                "head-subtitle": "Get in touch with me for collaborations, inquiries, or more information about my work.",
+
+                // Contact Section //
+                "contact-email-title": "Email",
+                "contact-email": "pabloalguz@gmail.com",
+                "contact-linkedin-title": "LinkedIn",
+                "contact-linkedin": "View my LinkedIn profile",
+                "contact-artstation-title": "ArtStation",
+                "contact-artstation": "Visit my ArtStation portfolio",
+                "contact-github-title": "GitHub",
+                "contact-github": "Check out my GitHub repositories"
+            },
+
+            es: {
+                // Zona navegación //
+                "nav-home": "Inicio",
+                "nav-projects": "Proyectos",
+                "nav-contact": "Contacto",
+
+                // Zona encabezado //
+                "head-title": "Contacto",
+                "head-subtitle": "Ponte en contacto conmigo para colaboraciones, consultas o más información sobre mi trabajo.",
+
+                // Zona de contacto //
+                "contact-email-title": "Correo electrónico",
+                "contact-email": "pabloalguz@gmail.com",
+                "contact-linkedin-title": "LinkedIn",
+                "contact-linkedin": "Ver mi perfil en LinkedIn",
+                "contact-artstation-title": "ArtStation",
+                "contact-artstation": "Visita mi portafolio en ArtStation",
+                "contact-github-title": "GitHub",
+                "contact-github": "Explora mis repositorios en GitHub"
+            }
+
+        };
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                el.innerHTML = translations[lang][key];
+            });
+        }
+
+        languageToggle.addEventListener('change', () => {
+            const lang = languageToggle.checked ? 'en' : 'es';
+            updateLanguage(lang);
+        });
+
+        // Set default language
+        updateLanguage('es');
+    </script>
+
+
 </body>
 
 </html>
