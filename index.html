@@ -35,10 +35,12 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html" data-key="nav-home"></a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html" data-key="nav-projects"></a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html" data-key="nav-contact"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html" data-key="nav-projects"></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html" data-key="nav-contact"></a>
+                            </li>
                         </ul>
-                        
+
                         <div class="d-flex align-items-center">
                             <img src="assets/SpainFlag.png" alt="España" class="flag-icon">
                             <label class="switch">
@@ -57,12 +59,17 @@
             <div class="container px-5">
                 <h1 class="display-4 fw-bolder" data-key="head-title"></h1>
                 <p class="lead" data-key="head-subtitle"></p>
+
+                
+
                 <a class="btn btn-light btn-lg px-4 py-3 mt-3" href="projects.html"
                     style="background-color: #f44336; color: white;" data-key="head-button"></a>
             </div>
         </section>
 
+
         <!-- Zona habilidades -->
+        <div class="separator-line"></div>
         <section class="py-5 text-center">
             <div class="container px-5">
                 <div class="row gx-5">
@@ -146,8 +153,9 @@
                     <div class="col-xxl-8">
                         <div class="text-center my-5">
                             <h1 class="display-5 fw-bolder" style="color: black;">Curriculum Vitae</h1>
-                            <a class="btn btn-light btn-lg px-4 py-3 mt-3" href="assets/CV/PabloAlonsoGuzman_CV.pdf"
-                                download="PabloAlonsoGuzman_CV" style="background-color: #f44336; color: white;">
+                            <a id="cv-download-btn" class="btn btn-light btn-lg px-4 py-3 mt-3"
+                                href="assets/CV/PabloAlonsoGuzman_CV_ES.pdf" download="PabloAlonsoGuzman_CV"
+                                style="background-color: #f44336; color: white;">
                                 <div class="d-inline-block">
                                     <i class="bi bi-download me-2"></i>
                                     <span class="ms-2" data-key="downloadCV"></span>
@@ -161,10 +169,88 @@
             <div class="container px-5 my-1">
                 <div class="row gx-5">
                     <div class="col-lg-8">
+                        <!-- Subzona experiencia laboral -->
+                        <section>
+                            <h2 class="fw-bolder mb-4 mt-2">
+                                <i class="bi bi-briefcase me-2 icon-gradient"></i>
+                                <span style="color: black;" data-key="job"></span>
+                            </h2>
+                            <div class="card shadow-sm mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h3 style="color: black; font-weight: bold;">
+                                                <i class="bi bi-calendar-event icon-gradient"></i>
+                                                <span style="color: black;" data-key="job-card1-title"></span>
+                                            </h3>
+                                            <p class="mb-0 fw-bold" data-key="job-card1-subtitle1"></p>
+                                            <p class="text-muted mb-0" data-key="job-card1-subtitle2"></p>
+                                        </div>
+                                        <span class="badge align-self-start"
+                                            style="background-color: red; color: white;"
+                                            data-key="job-card1-percentage">
+                                        </span>
+                                    </div>
+                                    <p class="mt-3" data-key="job-card1-sub-subtitle1"></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <!-- Subzona habilidades -->
+                        <section>
+                            <div>
+                                <h2 class="fw-bolder mb-4 mt-2">
+                                    <i class="bi bi-tools me-2 icon-gradient"></i>
+                                    <span style="color: black;" data-key="skills"></span>
+                                </h2>
+                                <div>
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Blender</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                3DsMax</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Unity</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Unreal Engine</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                ZBrush</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div
+                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
+                                                Substance Painter</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Salto de línea -->
+                    <hr class="my-5" style="border-top: 2px solid #ffffff;">
+
+                    <div class="col-lg-8">
                         <!-- Subzona experiencia académica -->
                         <section>
                             <h2 class="fw-bolder mb-4 mt-2">
-                                <i class="bi bi-person me-2 icon-gradient"></i>
+                                <i class="bi bi-mortarboard me-2 icon-gradient"></i>
                                 <span style="color: black;" data-key="experience"></span>
                             </h2>
                             <div class="card shadow-sm mb-4">
@@ -183,7 +269,8 @@
                                             data-key="experience-card1-percentage">
                                         </span>
                                     </div>
-                                    <p class="mt-3" data-key="experience-card1-sub-subtitle"></p>
+                                    <p class="mt-3" data-key="experience-card1-sub-subtitle1"></p>
+                                    <p class="mt-3" data-key="experience-card1-sub-subtitle2"></p>
                                 </div>
                             </div>
                             <div class="card shadow-sm mb-4">
@@ -226,38 +313,8 @@
                     </div>
 
                     <div class="col-lg-4">
-                        <!-- Subzona habilidades y conocimiento -->
+                        <!-- Subzona conocimiento -->
                         <section>
-                            <div>
-                                <h2 class="fw-bolder mb-4 mt-2">
-                                    <i class="bi bi-tools me-2 icon-gradient"></i>
-                                    <span style="color: black;" data-key="skills"></span>
-                                </h2>
-                                <div>
-                                    <div class="row g-3">
-                                        <div class="col-12 col-md-6">
-                                            <div
-                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
-                                                Blender</div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div
-                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
-                                                3DsMax</div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div
-                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
-                                                Substance Painter</div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div
-                                                style="background-color: #e0e0e0; padding: 10px; border-radius: 5px; text-align: center; font-weight: bold;">
-                                                Unity</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div>
                                 <h2 class="fw-bolder mb-4 mt-5">
                                     <i class="bi bi-book me-2 icon-gradient"></i>
@@ -339,7 +396,7 @@
 
                 // Zona habilidades //
                 "creativity-title": "Creativity",
-                "creativity-subtitle": "Prueba",
+                "creativity-subtitle": "Constant generation of innovative ideas to take projects to the next level.",
                 "teamwork-title": "Teamwork",
                 "teamwork-subtitle": "Excellent skills in collaborating and achieving common goals with diverse teams.",
                 "proyects-title": "Projects",
@@ -353,31 +410,44 @@
 
                 // Zona sobre mí //
                 "aboutme-title": "About Me",
-                "aboutme-subtitle1": "I am in the final stage of my Game Design and Development Degree, " +
-                    "with a great passion for 3D modeling, texturing, and animation. " +
-                    "I am focused on building a professional career in this field, " +
-                    "combining creativity with technical skills.",
-                "aboutme-subtitle2": "I have experience working with tools such as <strong>Blender, 3Ds Max, Substance Painter</strong>, " +
-                    " and <strong>Unity</strong>, which allows me to develop visually impactful and technically solid projects. " +
-                    " I am excited to apply my knowledge and continue learning " +
-                    " to contribute to innovative projects in the design and gaming industry.",
+                "aboutme-subtitle1": "I am an enthusiastic young graduate in Video Game Design and Development with a strong passion for 3D modeling, texturing, and animation." +
+                    " I am focused on building a professional career in this field, combining creativity with technical skills.",
+                "aboutme-subtitle2": "I have experience working with tools such as <strong>Blender</strong>, <strong>3Ds Max</strong>, <strong>Unity</strong>, <strong>Unreal " +
+                    "Engine</strong>, <strong>Substance Painter</strong>, and <strong>ZBrush</strong>, which allows me to develop visually striking and technically solid projects. " +
+                    "I am excited to apply my knowledge and continue learning to contribute to innovative projects in the design and video game industry.",
+
 
                 // Zona curriculum //
                 "downloadCV": "Download CV",
+                "linkCV": "assets/CV/PabloAlonsoGuzman_EN_CV.pdf",
+
+                // Subzona trabajo //
+                "job": "Work Experience",
+                "job-card1-title": "May 2025 - Sep 2025",
+                "job-card1-subtitle1": "Internship Contract",
+                "job-card1-subtitle2": "JdeRobot",
+                "job-card1-percentage": "Completed",
+                "job-card1-sub-subtitle1": "During my internship at JdeRobot, I worked on software development for the Unibotics platform, programming new features and performing maintenance and cloud deployment of the system.",
+
+                // Subzona estudios //
                 "experience": "Academic Experience",
                 "experience-card1-title": "2020 - Present",
-                "experience-card1-subtitle1": "Estudiante de grado",
-                "experience-card1-subtitle2": "Universidad Rey Juan Carlos, Madrid",
-                "experience-card1-percentage": "87.5% completed",
-                "experience-card1-sub-subtitle": "Grado en Diseño y Desarrollo de Videojuegos, enfocado en diseño 3D",
+                "experience-card1-subtitle1": "University Degree Student",
+                "experience-card1-subtitle2": "Rey Juan Carlos University, Madrid",
+                "experience-card1-percentage": "Final Thesis Pending",
+                "experience-card1-sub-subtitle1": "Degree in Video Game Design and Development, focused on 3D design",
+                "experience-card1-sub-subtitle2": "All courses completed and curricular internships finished",
                 "experience-card2-title": "2018 - 2020",
-                "experience-card2-subtitle1": "Bachillerato en Ciencias y Tecnología",
+                "experience-card2-subtitle1": "High School in Science and Technology",
                 "experience-card2-subtitle2": "IES El Escorial, Madrid",
                 "experience-card2-percentage": "Completed",
                 "experience-card3-title": "2014 - 2018",
-                "experience-card3-subtitle1": "Educación Secundaria Obligatoria (ESO)",
+                "experience-card3-subtitle1": "Compulsory Secondary Education (ESO)",
                 "experience-card3-subtitle2": "IES El Escorial, Madrid",
                 "experience-card3-percentage": "Completed",
+
+
+                // Subzona habilidades //
                 "skills": "Skills",
                 "knowledge": "Knowledge",
             },
@@ -409,20 +479,33 @@
 
                 // Zona sobre mí //
                 "aboutme-title": "Sobre mí",
-                "aboutme-subtitle1": "Soy un estudiante en la fase final de mi grado en Diseño y Desarrollo de Videojuegos con una gran pasión por el modelado 3D, " +
+                "aboutme-subtitle1": "Soy un joven entusiasta recién graduado en Diseño y Desarrollo de Videojuegos con una gran pasión por el modelado 3D, " +
                     "el texturizado y la animación. Estoy enfocado en construir una carrera profesional en este ámbito, combinando creatividad con habilidades técnicas.",
-                "aboutme-subtitle2": "Tengo experiencia trabajando con herramientas como <strong>Blender, 3Ds Max, Substance Painter</strong> y <strong>Unity</strong>," +
-                    " lo que me permite desarrollar proyectos visualmente impactantes y técnicamente sólidos. Estoy emocionado por aplicar mis conocimientos" +
-                    " y seguir aprendiendo para contribuir a proyectos innovadores en la industria del diseño y los videojuegos.",
+                "aboutme-subtitle2": "Tengo experiencia trabajando con herramientas como <strong>Blender, 3Ds Max, <strong>Unity</strong>, <strong>Unreal Engine</strong>," +
+                    "Substance Painter</strong> y <strong>ZBrush</strong> lo que me permite desarrollar proyectos visualmente impactantes y técnicamente sólidos. Estoy " +
+                    "emocionado por aplicar mis conocimientos y seguir aprendiendo para contribuir a proyectos innovadores en la industria del diseño y los videojuegos.",
 
                 // Zona curriculum //
                 "downloadCV": "Descargar CV",
+                "linkCV": "assets/CV/PabloAlonsoGuzman_ES_CV.pdf",
+
+                // Subzona trabajo //
+                "job": "Experiencia laboral",
+                "job-card1-title": "Mayo 2025 - Sep 2025",
+                "job-card1-subtitle1": "Contrato de prácticas",
+                "job-card1-subtitle2": "JdeRobot",
+                "job-card1-percentage": "Completed",
+                "job-card1-sub-subtitle1": "Durante mis prácticas en JdeRobot, trabajé en el desarrollo de software para la plataforma Unibotics, " +
+                    "programando nuevas funcionalidades y realizando el mantenimiento y despliegue en la nube del sistema.",
+
+                // Subzona estudios //
                 "experience": "Experiencia académica",
                 "experience-card1-title": "2020 - Presente",
                 "experience-card1-subtitle1": "Estudiante Grado Universitario",
                 "experience-card1-subtitle2": "Universidad Rey Juan Carlos, Madrid",
-                "experience-card1-percentage": "87,5% completado",
-                "experience-card1-sub-subtitle": "Grado en Diseño y Desarrollo de Videojuegos, enfocado en diseño 3D",
+                "experience-card1-percentage": "Falta TFG",
+                "experience-card1-sub-subtitle1": "Grado en Diseño y Desarrollo de Videojuegos, enfocado en diseño 3D",
+                "experience-card1-sub-subtitle2": "Superadas todas las asignaturas y finalizadas las prácticas curriculares",
                 "experience-card2-title": "2018 - 2020",
                 "experience-card2-subtitle1": "Bachillerato en Ciencias y Tecnología",
                 "experience-card2-subtitle2": "IES El Escorial, Madrid",
@@ -431,6 +514,8 @@
                 "experience-card3-subtitle1": "Educación Secundaria Obligatoria (ESO)",
                 "experience-card3-subtitle2": "IES El Escorial, Madrid",
                 "experience-card3-percentage": "Completado",
+
+                // Subzona habilidades //
                 "skills": "Habilidades",
                 "knowledge": "Conocimiento",
             }
@@ -441,6 +526,10 @@
                 const key = el.getAttribute('data-key');
                 el.innerHTML = translations[lang][key];
             });
+
+            // Cambiar el enlace del botón de descarga
+            const cvButton = document.getElementById('cv-download-btn');
+            cvButton.href = translations[lang].linkCV;
         }
 
         languageToggle.addEventListener('change', () => {
@@ -450,6 +539,46 @@
 
         // Set default language
         updateLanguage('es');
+    </script>
+
+
+    <!-- Script cambio de GIF -->
+    <script>
+        const animBox = document.querySelector('.animation-box-container');
+        const baseGif = animBox.querySelector('.base-gif');
+        const hoverGif = animBox.querySelector('.hover-gif');
+
+        let active = false; // si está bloqueado por click
+
+        // Hover actúa solo si no está activo el click
+        animBox.addEventListener('mouseenter', () => {
+            if (!active) {
+                hoverGif.style.display = 'block';
+                baseGif.style.display = 'none';
+            }
+        });
+
+        animBox.addEventListener('mouseleave', () => {
+            if (!active) {
+                hoverGif.style.display = 'none';
+                baseGif.style.display = 'block';
+            }
+        });
+
+        // Click activa o desactiva el GIF2 permanentemente
+        animBox.addEventListener('click', () => {
+            active = !active;
+
+            if (active) {
+                // activar GIF saludo permanentemente
+                hoverGif.style.display = 'block';
+                baseGif.style.display = 'none';
+            } else {
+                // volver al GIF base
+                hoverGif.style.display = 'none';
+                baseGif.style.display = 'block';
+            }
+        });
     </script>
 
 
